@@ -1,6 +1,6 @@
 {
   "name": "@seedkey/sdk-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SeedKey Auth SDK - client library for passwordless authentication via the SeedKey browser extension",
   "type": "module",
   "main": "./dist/index.js",
