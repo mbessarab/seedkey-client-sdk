@@ -1,0 +1,16 @@
+# Development files
+node_modules/
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Misc
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+

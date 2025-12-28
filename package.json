@@ -1,0 +1,91 @@
+{
+  "name": "@seedkey/sdk-client",
+  "version": "0.0.1",
+  "description": "SeedKey Auth SDK - client library for passwordless authentication via the SeedKey browser extension",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./storage": {
+      "import": "./dist/storage.js",
+      "types": "./dist/storage.d.ts"
+    },
+    "./logger": {
+      "import": "./dist/logger.js",
+      "types": "./dist/logger.d.ts"
+    },
+    "./types": {
+      "import": "./dist/types.js",
+      "types": "./dist/types.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "dev": "tsc --watch",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build",
+    "release": "npm run prepublishOnly && npm publish --access public",
+    "release:dry": "npm run prepublishOnly && npm publish --access public --dry-run"
+  },
+  "keywords": [
+    "seedkey",
+    "auth",
+    "authentication",
+    "passwordless",
+    "crypto",
+    "ed25519",
+    "browser-extension",
+    "webauthn",
+    "cryptographic-authentication",
+    "challenge-response",
+    "jwt",
+    "typescript"
+  ],
+  "author": "mbessarab",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbessarab/seedkey-sdk-client.git"
+  },
+  "homepage": "https://github.com/mbessarab/seedkey-sdk-client#readme",
+  "bugs": {
+    "url": "https://github.com/mbessarab/seedkey-sdk-client/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "@vitest/coverage-v8": "^2.1.8",
+    "@vitest/ui": "^2.1.8",
+    "eslint": "^9.0.0",
+    "happy-dom": "^15.11.7",
+    "rimraf": "^5.0.5",
+    "typescript": "~5.6.3",
+    "vitest": "^2.1.8"
+  },
+  "peerDependencies": {},
+  "engines": {
+    "node": ">=18"
+  }
+}

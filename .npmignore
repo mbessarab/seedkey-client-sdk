@@ -1,0 +1,38 @@
+# Source files (dist is published)
+src/
+
+# Development files
+node_modules/
+*.tsbuildinfo
+
+# Config files
+tsconfig.json
+eslint.config.mjs
+.eslintrc*
+.prettierrc*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test files
+**/*.test.ts
+**/*.spec.ts
+__tests__/
+tests/
+coverage/
+
+# Git
+.git/
+.gitignore
+
+# Misc
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# npm
+package-lock.json
