@@ -1,6 +1,6 @@
 {
   "name": "@seedkey/sdk-client",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "SeedKey Auth SDK - client library for passwordless authentication via the SeedKey browser extension",
   "type": "module",
   "main": "./dist/index.js",
@@ -68,11 +68,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mbessarab/seedkey-sdk-client.git"
+    "url": "https://github.com/mbessarab/seedkey-client-sdk.git"
   },
-  "homepage": "https://github.com/mbessarab/seedkey-sdk-client#readme",
+  "homepage": "https://github.com/mbessarab/seedkey-client-sdk#readme",
   "bugs": {
-    "url": "https://github.com/mbessarab/seedkey-sdk-client/issues"
+    "url": "https://github.com/mbessarab/seedkey-client-sdk/issues"
   },
   "publishConfig": {
     "access": "public",
