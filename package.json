@@ -27,7 +27,8 @@
   "files": [
     "dist",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "sideEffects": false,
   "scripts": {
@@ -43,7 +44,11 @@
     "test:ui": "vitest --ui",
     "prepublishOnly": "npm run typecheck && npm run test && npm run build",
     "release": "npm run prepublishOnly && npm publish --access public",
-    "release:dry": "npm run prepublishOnly && npm publish --access public --dry-run"
+    "release:dry": "npm run prepublishOnly && npm publish --access public --dry-run",
+    "version:patch": "npm version patch --no-git-tag-version",
+    "version:minor": "npm version minor --no-git-tag-version",
+    "version:major": "npm version major --no-git-tag-version",
+    "version:prerelease": "npm version prerelease --preid=beta --no-git-tag-version"
   },
   "keywords": [
     "seedkey",

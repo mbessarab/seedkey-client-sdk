@@ -10,6 +10,7 @@ tsconfig.json
 eslint.config.mjs
 .eslintrc*
 .prettierrc*
+vitest.config.ts
 
 # IDE
 .vscode/
@@ -28,6 +29,13 @@ coverage/
 .git/
 .gitignore
 
+# GitHub
+.github/
+
+# Docs (except README and CHANGELOG)
+doc/
+PUBLISHING.md
+
 # Misc
 *.log
 *.tmp
@@ -36,3 +44,6 @@ Thumbs.db
 
 # npm
 package-lock.json
+
+# Package tarballs
+*.tgz
