@@ -243,11 +243,13 @@ For efficient integration with your backend:
 - use `seedkey-sdk-server` — a library to implement the authentication mechanism yourself;
 - or deploy the ready self-hosted service `seedkey-auth-service`.
 
+### 🔧 Related Projects
 Also check out other repositories in the ecosystem:
-
-- `seedkey-auth-service-migrations` — Liquibase migrations for `seedkey-auth-service`.
-- `seedkey-auth-service-helm-chart` — Helm Chart for deploying `seedkey-auth-service` + `seedkey-auth-service-migrations`.
-- `seedkey-browser-extension` — browser extension.
+- [seedkey-browser-extension](https://github.com/mbessarab/seedkey-browser-extension) — browser extension.
+- [seedkey-db-migrations](https://github.com/mbessarab/seedkey-db-migrations) — migrations for `seedkey-auth-service`.
+- [seedkey-auth-service](https://github.com/mbessarab/seedkey-auth-service) — self-hosted authentication service.
+- [seedkey-server-sdk](https://github.com/mbessarab/seedkey-server-sdk) — server-side library for implementing the service yourself.
+- [seedkey-auth-service-helm-chart](https://github.com/mbessarab/seedkey-auth-service-helm-chart) — Helm chart for deploying `seedkey-auth-service` + migrations.
 
 ## 🤝 Contributing
 

@@ -243,11 +243,13 @@ REST API, которое использует SDK:
 - используйте `seedkey-sdk-server` — библиотеку для самостоятельной реализации механизма аутентификации;
 - или разверните готовый self-hosted сервис `seedkey-auth-service`.
 
+### 🔧 Связные проекты
 Ознакомьтесь также с другими репозиториями экосистемы:
-
-- `seedkey-auth-service-migrations` — Liquibase-миграции для `seedkey-auth-service`.
-- `seedkey-auth-service-helm-chart` — Helm Chart для разворачивания `seedkey-auth-service` + `seedkey-auth-service-migrations`.
-- `seedkey-browser-extension` — браузерное расширение.
+- [seedkey-browser-extension](https://github.com/mbessarab/seedkey-browser-extension) — браузерное расширение.
+- [seedkey-db-migrations](https://github.com/mbessarab/seedkey-db-migrations) — миграции для `seedkey-auth-service`.
+- [seedkey-auth-service](https://github.com/mbessarab/seedkey-auth-service) — self-hosted сервис аутентификации.
+- [seedkey-server-sdk](https://github.com/mbessarab/seedkey-server-sdk) — серверная библиотека для самостоятельной реализации сервиса.
+- [seedkey-auth-service-helm-chart](https://github.com/mbessarab/seedkey-auth-service-helm-chart) — Helm Chart для развёртывания `seedkey-auth-service` + миграций.
 
 ## 🤝 Контрибьютинг
 
